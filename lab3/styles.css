@@ -1,0 +1,74 @@
+.brush-icon {
+    font-size: 40px;
+    animation: brush-paint 2s linear infinite;
+}
+
+@keyframes brush-paint {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+header {
+    background-color: #9b9797;
+    color: black;
+    padding: 30px;
+}
+
+.logo {
+    width: 250px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 200px;
+        margin: auto;
+        display: block;
+    }
+}
+
+.container {
+    flex: 1;
+}
+
+.description{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('pics/pic2.jpg');
+    color: cornsilk;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+p {
+    word-wrap: break-word;
+    max-width: 600px;
+}
+.card-img-top{
+    height: 150px;
+    object-fit: cover;
+}
+footer {
+    background-color: #9a9697;
+    color: #000000;
+    text-align: right;
+    padding: 45px;
+    text-decoration: none;
+}
+
+footer a {
+    color: #000000;
+    margin: 20px;
+}
+
+footer i {
+    font-size: 30px;
+}
