@@ -1,0 +1,151 @@
+body {
+    background-color: #f8f8f8;
+}
+
+.brush-icon {
+    font-size: 40px;
+    animation: brush-paint 2s linear infinite;
+}
+
+@keyframes brush-paint {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 993px) {
+    .header-container {
+        background-color: #9a9697 !important;
+        box-shadow: 0 0 0 !important;
+    }
+}
+
+header {
+    background-color: #9b9797;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+.header-container {
+    background-color: #817779;
+}
+
+.logo {
+    width: 250px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 200px;
+        margin: auto;
+        display: block;
+    }
+}
+
+.nav-item a.nav-link {
+    font-size: 18px;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.login-button {
+    background-color: #6b5258;
+    color: #f1f1f1 !important;
+    border-radius: 20px;
+}
+
+.login-button:hover {
+    background-color: rgba(241, 241, 241, 0.42);
+}
+
+
+
+.description{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('pics/pic2.jpg');
+    color: cornsilk;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.qa {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.qa p {
+    display: none;
+}
+
+div.active p {
+    display: block;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+main {
+    flex: 1;
+}
+
+p {
+    word-wrap: break-word;
+    max-width: 600px;
+}
+.card-img-top{
+    height: 150px;
+    object-fit: cover;
+}
+footer {
+    background-color: #9a9697;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+footer i {
+    font-size: 30px;
+}
+
+.qa-block {
+    width: 100%;
+    max-width: none;
+}
+
+.qa-block .row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+p {
+    word-wrap: break-word;
+    max-width: none;
+}
+
+
