@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Реєстрація</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.6/dist/jquery.inputmask.min.js"></script>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <img src="../../pics/logo.png" alt="Логотип" class="logo">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container header-container">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="../user-view/main.html">Головна</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../user-view/contact.html">Контакти</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../user-view/qa.html">Q&A</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../user-view/table.html">Роботи</a></li>
+                    <li class="nav-item"><a class="nav-link btn login-button" href="../authentication/login.html">Увійти</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container mt-4">
+    <form>
+        <div class="form-group">
+            <label for="email">Введіть електронну пошту:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+            <p class="mt-1 error-message" id="email-error" ></p>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Введіть пароль:</label>
+            <input type="password" class="form-control" id="password" name="password" required >
+            <p class="mt-1 error-message" id="password-error" ></p>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="surname">Введіть прізвище:</label>
+                <input type="text" class="form-control" id="surname" name="surname" required>
+                <p class="mt-1 error-message" id="surname-error" ></p>
+
+            </div>
+            <div class="form-group col-md-4">
+                <label for="name">Введіть ім'я:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+                <p class="mt-1 error-message" id="name-error" ></p>
+
+            </div>
+            <div class="form-group col-md-4">
+                <label for="middle-name">Введіть по батькові:</label>
+                <input type="text" class="form-control" id="middle-name" name="middle-name" required>
+                <p class="mt-1 error-message" id="middle-name-error" ></p>
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Стать:</label>
+            <input type="radio" id="female" name="gender" value="Жінка" required>
+            <label for="female">Жінка</label>
+            <input type="radio" id="male" name="gender" value="Чоловік" required>
+            <label for="male">Чоловік</label>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Номер телефону</label>
+            <input class="form-control item" type="tel" id="phone" name="phone" placeholder="+38(0__)-___-__-__" required>
+        </div>
+
+        <div class="form-group">
+            <label for="date">Введіть дату народження:</label>
+            <input type="date" class="form-control" id="date" name="date" required>
+        </div>
+
+        <div class="form-group">
+            <label for="group">Вибір групи:</label>
+            <select class="form-control" id="group" name="group">
+                <option value="IA-21">IA-21</option>
+                <option value="IA-22">IA-22</option>
+                <option value="IA-23">IA-23</option>
+                <option value="IA-24">IA-24</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="file">Додай своє портфоліо:</label>
+            <input type="file" class="form-control-file" id="file" name="file">
+        </div>
+        <script src="../../js/validation.js"></script>
+
+        <button type="submit" class="btn btn-primary mb-4">Відправити</button>
+    </form>
+
+    <table class="table" id="user-table">
+        <thead>
+        <tr>
+            <th></th>
+            <th>Email</th>
+            <th>ПІБ</th>
+            <th>Стать</th>
+            <th>Номер</th>
+            <th>Дата народження</th>
+            <th>Група</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <button type="button" id="delete-selected" class="btn btn-danger">Видалити</button>
+    <button type="button" id="duplicate-selected" class="btn btn-warning">Дублювати</button>
+
+    <script src="../../js/phoneMask.js"></script>
+    <script src="../../js/register.js"></script>
+</div>
+<footer>
+    <a href="tel:+380123456789"><i class="fas fa-phone"></i></a>
+    <a href="mailto:gallerymails@email.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://t.me/gallerytg"><i class="fab fa-telegram"></i></a>
+    <a href="viber://chat?number=+380123456789"><i class="fab fa-viber"></i></a>
+</footer>
+</body>
+</html>
